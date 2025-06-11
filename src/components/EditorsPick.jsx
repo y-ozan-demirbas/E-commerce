@@ -6,7 +6,7 @@ export default function EditorsPick() {
       <p className="text-gray-500 mb-10">Problems trying to resolve the conflict between</p>
 
       {/* Grid alanı */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 m-auto max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 m-auto max-w-7xl rounded-sm">
         {/* Sol büyük kutu */}
         <div className="relative h-[700px] md:col-span-2 bg-gray-200 flex items-end justify-center">
           <button className="mb-4 px-6 py-2 bg-white text-black font-semibold">MEN</button>
