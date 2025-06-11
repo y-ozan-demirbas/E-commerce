@@ -5,7 +5,7 @@ export default function ProductCards() {
     <section className="flex w-full px-4 py-10 gap-10 !m-auto !p-10 !max-w-full">
       
       {/* Sol Görsel Alanı (Sadece Çerçeve) */}
-      <div className="w-2/5 !h-[780px] !rounded-xl !bg-gray-100 !border !border-dashed !border-gray-300 flex items-center justify-center">
+      <div className="w-2/5 !h-[800px] !rounded-xl !bg-gray-100 !border !border-dashed !border-gray-300 flex items-center justify-center">
         <span className="text-gray-400 text-sm italic">Image Placeholder</span>
       </div>
 
