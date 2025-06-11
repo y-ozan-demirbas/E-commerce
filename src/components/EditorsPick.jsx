@@ -9,25 +9,24 @@ export default function EditorsPick() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 m-auto max-w-7xl rounded-sm">
         {/* Sol büyük kutu */}
         <div className="relative h-[700px] md:col-span-2 bg-gray-200 flex items-end justify-center">
-          <button className="mb-4 px-6 py-2 bg-white text-black font-semibold">MEN</button>
+          <button className="mb-4 px-6 py-2 bg-white text-black font-semibold rounded-sm">MEN</button>
         </div>
 
         {/* Orta kutu */}
         <div className="relative h-[700px] bg-gray-200 flex items-end justify-center">
-          <button className="mb-4 px-6 py-2 bg-white text-black font-semibold">WOMEN</button>
+          <button className="mb-4 px-6 py-2 bg-white text-black font-semibold rounded-sm">WOMEN</button>
         </div>
 
         {/* Sağ iki küçük kutu */}
         <div className="flex flex-col gap-4">
           <div className="relative h-[342px] bg-gray-200 flex items-end justify-center">
-            <button className="mb-4 px-4 py-2 bg-white text-black font-semibold">ACCESSORIES</button>
+            <button className="mb-4 px-4 py-2 bg-white text-black font-semibold rounded-sm">ACCESSORIES</button>
           </div>
           <div className="relative h-[342px] bg-gray-200 flex items-end justify-center">
-            <button className="mb-4 px-6 py-2 bg-white text-black font-semibold">KIDS</button>
+            <button className="mb-4 px-6 py-2 bg-white text-black font-semibold rounded-sm">KIDS</button>
           </div>
         </div>
       </div>
     </section>
   );
 }
-// Bu bileşen, "Editor’s Pick" bölümünü oluşturur.

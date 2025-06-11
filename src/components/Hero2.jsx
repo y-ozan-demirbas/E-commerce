@@ -59,12 +59,12 @@ export default function Hero2() {
     }
           >
             {/* Sol içerik */}
-            <div className="!space-y-4 !max-w-lg !p-6 !rounded-xl !m-30">
-      <p className="text-sm !font-semibold !tracking-wide !uppercase">{slide.subtitle}</p>
-      <h2 className="text-4xl !md:text-5xl !font-extrabold">{slide.title}</h2>
-      <p className="!text-lg">{slide.description}</p>
-      <p className="!text-lg !font-bold">{slide.price}</p>
-      <button className="!bg-green-500 !text-white !font-bold !py-2 !px-6 !rounded !hover:bg-green-600 !transition">
+            <div className="space-y-4 max-w-lg p-6 rounded-xl m-5 md:m-30">
+      <p className="text-sm font-semibold tracking-wide uppercase">{slide.subtitle}</p>
+      <h2 className="text-4xl md:text-5xl font-extrabold">{slide.title}</h2>
+      <p className="text-lg">{slide.description}</p>
+      <p className="text-lg font-bold">{slide.price}</p>
+      <button className="bg-green-500 text-white font-bold py-2 px-6 rounded hover:bg-green-600 transition">
         {slide.button}
       </button>
     </div>

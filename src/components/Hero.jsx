@@ -41,40 +41,40 @@ export default function Hero() {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((slide, idx) => (
-  <div
-    key={slide.id}
-    className={`w-full min-w-full h-[600px] flex items-center justify-between px-6 md:px-24 ${slide.bgColor || ""} text-white`}
-    style={
-      idx === 0 && slide.image
-        ? {
-            backgroundImage: `url(${slide.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "top",
-            backgroundRepeat: "no-repeat",
-          }
-        : {}
-    }
+          <div
+            key={slide.id}
+            className={`w-full min-w-full h-[600px] flex items-center justify-between px-6 md:px-24 ${slide.bgColor || ""} text-white`}
+            style={
+              idx === 0 && slide.image
+                ? {
+                    backgroundImage: `url(${slide.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }
+                : {}
+            }
           >
             {/* Sol içerik */}
-            <div className="!space-y-4 !max-w-lg !p-6 !rounded-xl !m-30">
-      <p className="text-sm !font-semibold !tracking-wide !uppercase">{slide.subtitle}</p>
-      <h2 className="text-4xl !md:text-5xl !font-extrabold">{slide.title}</h2>
-      <p className="!text-lg">{slide.description}</p>
-      <button className="!bg-green-500 !text-white !font-bold !py-2 !px-6 !rounded !hover:bg-green-600 !transition">
-        {slide.button}
-      </button>
-    </div>
+            <div className="space-y-4 max-w-lg p-6 rounded-xl m-5 md:m-30">
+              <p className="text-sm font-semibold tracking-wide uppercase">{slide.subtitle}</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold">{slide.title}</h2>
+              <p className="text-lg">{slide.description}</p>
+              <button className="bg-green-500 text-white font-bold py-2 px-6 rounded hover:bg-green-600 transition">
+                {slide.button}
+              </button>
+            </div>
 
             {/* Sağ görsel veya placeholder */}
             {idx !== 0 && slide.image ? (
-      <img
-        src={slide.image}
-        alt={slide.title}
-        className="hidden md:block object-cover rounded-xl shadow"
-      />
-    ) : idx !== 0 ? (
-      <div className="hidden md:block rounded-xl bg-white/20 border-2 border-dashed border-white m-auto"></div>
-    ) : null}
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="hidden md:block object-cover rounded-xl shadow"
+              />
+            ) : idx !== 0 ? (
+              <div className="hidden md:block rounded-xl bg-white/20 border-2 border-dashed border-white m-auto"></div>
+            ) : null}
           </div>
         ))}
       </div>

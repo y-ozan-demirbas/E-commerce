@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import ProductCards from '../components/ProduxtCards'
+import FeaturedProducts from '../components/FeaturedProducts'
 import Hero from '../components/Hero'
 import EditorsPick from '../components/EditorsPick'
 import BestSeller from '../components/BestSeller'
@@ -13,7 +13,7 @@ export default function HomePage() {
         <Hero />
         <EditorsPick />
         <BestSeller />
-        <ProductCards />
+        <FeaturedProducts />
         <Hero2 />
         <JoinUs />
     </Layout>

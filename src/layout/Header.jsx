@@ -9,86 +9,91 @@ import {
 
 export default function Header() {
   return (
-    <div>
-      <nav className="block md:text-center !m-2 md:flex md:flex-wrap  md:mx-auto md:mt-px  md:items-center md:justify-around md:px-6 md:py-4 bg-[#252B42] md:bg-white text-white md:text-gray-900 shadow-md">
-        {/* Brand */}
-        <div className="hidden md:block md:text-xl md:font-bold !md:mb-2">BrandName</div>
+    <header className="w-full shadow-md">
+      {/*  MASAÜSTÜ  */}
+      <nav className="hidden md:flex justify-between items-center px-6 py-4 bg-white text-gray-900">
+        {/* Sol taraf: Brand (Logo) */}
+        <div className="text-xl font-bold">BrandName</div>
 
-        {/* Menu Links */}
-        <ul className=" hidden md:flex !items-center !font-semibold !text-sm !pb-2 !gap-6">
+        {/* Orta: Menü linkleri */}
+        <ul className="flex items-center gap-6 font-semibold text-sm">
           <li><a href="#">Home</a></li>
-          <li className="relative group hidden md:block">
+          <li className="relative group">
             <a href="#" className="flex items-center gap-1">
-              <span className="block text-center items-center">Shop</span>
+              <span>Shop</span>
               <ChevronDown className="w-4 h-4" />
             </a>
-            {/* Dropdown içeriği sonra eklenecek */}
+            {/* Dropdown */}
+            <div className="absolute left-0 top-full mt-2 w-64 bg-white shadow-lg p-4 rounded-sm opacity-0 border border-blue-300 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-sm font-bold mb-2">Kadın</h4>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Belts</a></li>
+                    <li><a href="#">Cosmetics</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold mb-2">Erkek</h4>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Belts</a></li>
+                    <li><a href="#">Cosmetics</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
-          <li><a href="#" className="hidden md:block">About</a></li>
-          <li><a href="#" className="hidden md:block">Blog</a></li>
-          <li><a href="#" className="md:block">Product</a></li>
-          <li><a href="#" className="md:block">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#"className="hidden md:block">Pages</a></li>
+          <li><a href="#">Pages</a></li>
         </ul>
 
-        {/* Right Side Icons */}
-        <div className="hidden md:flex md:items-center gap-4 text-sm font-semibold">
+        {/* Sağ taraf: İkonlar */}
+        <div className="flex items-center gap-4 text-sm font-semibold">
           <a href="#" className="flex items-center gap-1">
             <User className="w-4 h-4" />
             <span>Login / Register</span>
           </a>
-          <a href="#">
-            <Search className="w-4 h-4" />
+          <a href="#"><Search className="w-4 h-4" /></a>
+          <a href="#" className="flex items-center gap-1">
+            <ShoppingCart className="w-4 h-4" /><span>1</span>
           </a>
           <a href="#" className="flex items-center gap-1">
-            <ShoppingCart className="w-4 h-4" />
-            <span>1</span>
-          </a>
-          <a href="#" className="flex items-center gap-1">
-            <Heart className="w-4 h-4" />
-            <span>1</span>
+            <Heart className="w-4 h-4" /><span>1</span>
           </a>
         </div>
-        <div className="md:hidden !flex !items-center !justify-around !gap-4 !text-sm !font-semibold !p-4">
-        {/* Mobile Menu Brand */}
-        <div className="!text-xl !font-bold !mb-2 md:hidden">BrandName</div>
-
-         {/* Mobile Right Side Icons */}
-        <div className=" flex md:flex md:items-center md:gap-4 md:text-sm md:font-semibold md:hidden gap-6">
-          
-          <a href="#">
-            <Search className="w-4 h-4" />
-          </a>
-          <a href="#" className="flex items-center gap-1">
-            <ShoppingCart className="w-4 h-4" />
-            
-          </a>
-          <a href="#" className="flex items-center gap-1">
-            <Menu className="w-4 h-4" />
-            
-          </a>
-        </div>
-</div>
-            {/*Mobile Menu Links */}
-        <ul className="block items-center font-semibold text-sm !pb-2 !gap-6 md:hidden">
-          <li><a href="#">Home</a></li>
-          <li className="relative group hidden md:block">
-            <a href="#" className="flex items-center gap-1">
-              <span className="block text-center items-center">Shop</span>
-              <ChevronDown className="w-4 h-4" />
-            </a>
-            {/* Dropdown içeriği sonra eklenecek */}
-          </li>
-          <li><a href="#" className="hidden md:block">About</a></li>
-          <li><a href="#" className="hidden md:block">Blog</a></li>
-          <li><a href="#" className="md:block">Product</a></li>
-          <li><a href="#" className="md:block">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#"className="hidden md:block">Pages</a></li>
-        </ul>
-
       </nav>
-    </div>
+
+      {/*  MOBİL  */}
+      <nav className="block md:hidden bg-[#252B42] text-white px-4 py-3">
+        {/* Üst sıra: Brand + İkonlar */}
+        <div className="flex justify-between items-center mb-4">
+          <div className="text-xl font-bold">BrandName</div>
+          <div className="flex items-center gap-4">
+            <User className="w-4 h-4" />
+            <Search className="w-5 h-5" />
+            <ShoppingCart className="w-5 h-5" />
+            <Menu className="w-5 h-5" />
+          </div>
+        </div>
+
+        {/* Alt sıra: Menü Linkleri */}
+        <ul className="flex flex-col items-center gap-2 space-y-2 font-semibold text-sm m-7">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
