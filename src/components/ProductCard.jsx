@@ -42,7 +42,7 @@ export default function ProductCard() {
             4.9
           </span>
         </div>
-        <p className="text-sm text-gray-600 leading-snug">
+        <p className="text-sm text-gray-600 leading-snug text-left">
           We focus on ergonomics and meeting you where you work. It's only a keystroke away.
         </p>
       </div>
@@ -54,7 +54,7 @@ export default function ProductCard() {
       </div>
 
       {/* Fiyatlar */}
-      <div className="text-sm">
+      <div className="text-sm text-left">
         <span className="text-gray-400">$16.48</span>
         <span className="text-green-600 font-bold ml-2"> $6.48</span>
       </div>

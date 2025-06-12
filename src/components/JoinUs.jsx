@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 export default function JoinUs() {
   return (
-    <section className="flex flex-col md:flex-row w-full px-4 py-10 gap-10 max-w-screen-xl mx-auto">
+    <section className="flex flex-col md:flex-row w-full px-4 py-10 gap-10 md:gap-40 max-w-screen-xl mx-auto">
       
       {/* Sol Görsel Alanı (Sadece Çerçeve) */}
       <div className="w-full md:w-1/2 h-64 md:h-[700px] rounded-xl bg-gray-100 border border-dashed border-gray-300 flex items-center justify-center">

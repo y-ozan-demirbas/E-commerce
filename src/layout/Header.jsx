@@ -6,6 +6,7 @@ import {
   Menu,
   ChevronDown,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -17,12 +18,12 @@ export default function Header() {
 
         {/* Orta: Menü linkleri */}
         <ul className="flex items-center gap-6 font-semibold text-sm">
-          <li><a href="#">Home</a></li>
+          <li><Link to="/#">Home</Link></li>
           <li className="relative group">
-            <a href="#" className="flex items-center gap-1">
+            <Link to="/shop" className="flex items-center gap-1">
               <span>Shop</span>
               <ChevronDown className="w-4 h-4" />
-            </a>
+            </Link>
             {/* Dropdown */}
             <div className="absolute left-0 top-full mt-2 w-64 bg-white shadow-lg p-4 rounded-sm opacity-0 border border-blue-300 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="grid grid-cols-2 gap-6">
