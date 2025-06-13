@@ -16,3 +16,5 @@ const cards = Array.from({ length: 36 }, (_, i) => ({
 }));
 
 export default cards;
+
+// pagination (TanstackQuerry ile yapılacak)!!!

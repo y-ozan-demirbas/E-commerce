@@ -5,7 +5,7 @@ export default function ShopCardHolder() {
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 12;
 
-  // Kart verilerini al (şimdilik placeholder)
+  // Kart verileri (şimdilik placeholder)
   const allCards = ShopCards;
 
   // Sayfa hesaplamaları
@@ -34,7 +34,13 @@ export default function ShopCardHolder() {
             <h3 className="text-sm font-bold mt-2">{card.title}</h3>
             <p className="text-xs text-gray-500">{card.subtitle}</p>
             <div className="mt-1 text-sm text-gray-800 line-through">${card.oldPrice}</div>
-            <div className="text-sm text-green-600 font-semibold">${card.newPrice}</div>
+            <div className="text-sm text-green-600 font-semibold mb-2">${card.newPrice}</div>
+            <div className="flex gap-2 justify-center">
+              <span className="w-3 h-3 rounded-full bg-cyan-400"></span>
+              <span className="w-3 h-3 rounded-full bg-blue-500"></span>
+              <span className="w-3 h-3 rounded-full bg-orange-500"></span>
+              <span className="w-3 h-3 rounded-full bg-gray-700"></span>
+            </div>
           </div>
         ))}
       </div>

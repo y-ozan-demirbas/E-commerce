@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { ChevronRight } from 'lucide-react'
 import ShopCardHolder from '../components/ShopCardHolder';
+import ShopLogos from '../components/ShopLogos';
 
 const cardData = [
   {
@@ -74,6 +75,7 @@ export default function ShopPage() {
         </section>
       </div>
       <ShopCardHolder />
+      <ShopLogos />
     </Layout>
   )
 }
