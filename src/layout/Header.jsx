@@ -54,7 +54,7 @@ export default function Header() {
           <li><a href="#">Blog</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to="/contact">Contact</Link></li>
           <li><a href="#">Pages</a></li>
         </ul>
 
