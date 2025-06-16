@@ -15,6 +15,7 @@ export default function Hero() {
       description: "We know how large objects will act, but things on a small scale.",
       button: "SHOP NOW",
       image: hero1,
+      bgColor: "bg-blue-500",
     },
     {
       id: 2,

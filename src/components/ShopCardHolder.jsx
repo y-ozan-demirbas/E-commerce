@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ShopCards from "./ShopCards";
+import { Link } from "react-router-dom";
 
 export default function ShopCardHolder() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -26,11 +27,13 @@ export default function ShopCardHolder() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10">
         {currentCards.map((card) => (
           <div key={card.id} className="flex flex-col items-center text-center">
+            <Link to={`/product/${card.id}`}>
             <img
               src={card.image}
               alt={`Product ${card.id}`}
               className="w-full h-auto rounded-sm shadow-md"
             />
+            </Link>
             <h3 className="text-sm font-bold mt-2">{card.title}</h3>
             <p className="text-xs text-gray-500">{card.subtitle}</p>
             <div className="mt-1 text-sm text-gray-800 line-through">${card.oldPrice}</div>
