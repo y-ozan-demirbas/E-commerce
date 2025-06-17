@@ -15,7 +15,7 @@ export default function Hero() {
       description: "We know how large objects will act, but things on a small scale.",
       button: "SHOP NOW",
       image: hero1,
-      bgColor: "bg-blue-500",
+      bgColor: "bg-[#00B5DA]",
     },
     {
       id: 2,
@@ -49,9 +49,10 @@ export default function Hero() {
               idx === 0 && slide.image
                 ? {
                     backgroundImage: `url(${slide.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "top",
-                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "contain",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",                    
+
                   }
                 : {}
             }
@@ -68,11 +69,13 @@ export default function Hero() {
 
             {/* Sağ görsel veya placeholder */}
             {idx !== 0 && slide.image ? (
+              <div className="hidden md:flex items-center justify-center w-80 h-96 bg-white rounded-xl shadow ml-8 overflow-hidden">
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="hidden md:block object-cover rounded-xl shadow"
+                className="max-w-full max-h-full object-contain"
               />
+              </div>
             ) : idx !== 0 ? (
               <div className="hidden md:block rounded-xl bg-white/20 border-2 border-dashed border-white m-auto"></div>
             ) : null}

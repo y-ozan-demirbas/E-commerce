@@ -5,7 +5,6 @@ import Team from "../components/Team";
 export default function ContactPage() {
   return (
     <Layout>
-        <Team />
     <div className="min-h-screen flex flex-col justify-center items-center bg-linear-to-r from-cyan-400 to-green-300">
       <h1 className="text-4xl md:text-5xl font-extrabold text-[#252B42] text-center mb-6 mt-10">
         Get answers to all your<br />questions.

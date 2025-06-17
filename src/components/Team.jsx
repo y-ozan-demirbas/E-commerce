@@ -26,7 +26,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section className="min-h-screen bg-linear-to-r from-cyan-400 to-green-300 flex flex-col items-center py-12">
+    <section className=" bg-white flex flex-col items-center md:ga py-16">
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#252B42] text-center mb-3 mt-8">
         Meet Our Team
       </h2>
@@ -34,7 +34,7 @@ export default function Team() {
         Problems trying to resolve the conflict between<br />
         the two major realms of Classical physics: Newtonian mechanics
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-30 w-full max-w-7xl px-4">
         {team.map((member, i) => (
           <div key={i} className="bg-white rounded-sm overflow-hidden flex flex-col shadow-lg">
             <div className={`w-full h-80 flex items-center justify-center ${member.bg}`}>

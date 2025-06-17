@@ -50,7 +50,7 @@ export default function Header() {
               </div>
             </div>
           </li>
-          <li><a href="#">About</a></li>
+          <li><Link to="/about">About</Link></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">Pricing</a></li>
